@@ -1,0 +1,16 @@
+{
+  "name": "War",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Apercu/War.git"
+  },
+  "homepage": "https://github.com/Apercu/War",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-compass": "~0.7.2"
+  }
+}
