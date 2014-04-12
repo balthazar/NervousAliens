@@ -1,4 +1,4 @@
-/* line 17, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -78,13 +78,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 17, ../scss/style.scss */
-html, body {
+body {
   width: 100%;
   height: 100%;
-  background: gray;
 }
 
-/* line 23, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+/* line 28, ../scss/style.scss */
 hr.custom {
   width: 90%;
   border: 0;
@@ -92,7 +98,7 @@ hr.custom {
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 0;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 i.custom {
   background-color: #1e6bce;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -118,26 +124,30 @@ i.custom {
   padding: 4px 10px;
   min-height: 30px;
 }
-/* line 42, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 i.custom:hover {
   background-color: #287CE9;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 60, ../scss/style.scss */
 .intro {
   padding: 50px;
   margin: 0 auto;
   text-align: center;
   font-family: "Coalition";
 }
-/* line 52, ../scss/style.scss */
-.intro .heading {
-  color: #F5F247;
-  font-size: 50px;
-  margin-bottom: 50px;
-}
-/* line 57, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 .intro .launch {
+  cursor: pointer;
   height: 200px;
   background-color: #1e6bce;
   padding: 20px 50px 10px 50px;
@@ -159,12 +169,12 @@ i.custom:hover {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-/* line 68, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .intro .launch:hover {
   background-color: #287CE9;
 }
 
-/* line 74, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -173,7 +183,7 @@ i.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 78, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -182,7 +192,7 @@ i.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 82, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -191,7 +201,7 @@ i.custom:hover {
   transform: rotate(260deg);
 }
 
-/* line 86, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -200,26 +210,23 @@ i.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 90, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .game-container {
+  display: none;
+  width: 1500px;
+  height: 1100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
   -webkit-border-radius: 4px 4px;
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 1500px;
-  height: 1100px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
-/* line 101, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 104, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .game-container > .controllers {
   min-height: 100px;
   padding: 30px 20px;

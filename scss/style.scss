@@ -14,10 +14,15 @@
 	@include user-select(none);
 }
 
-html, body {
+body {
 	width: 100%;
 	height: 100%;
-	background: gray;
+}
+
+html {
+	height: 100%;
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+	overflow: hidden;
 }
 
 hr.custom {
@@ -44,17 +49,21 @@ i.custom {
 	}
 }
 
+.main {
+	position: absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .intro {
 	padding: 50px;
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Coalition";
-	.heading {
-		color: #F5F247;
-		font-size: 50px;
-		margin-bottom: 50px;
-	}
 	.launch {
+		cursor:pointer;
 		height: 200px;
 		background-color: rgb(30, 107, 206);
 		padding: 20px 50px 10px 50px;
@@ -88,16 +97,13 @@ i.custom {
 }
 
 .game-container {
-	@include border-radius(4px, 4px);
-	background-color: rgba(255, 255, 255, 0.75);
+	display:none;
 	width: 1500px;
 	height: 1100px;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+	@include border-radius(4px, 4px);
 	> .grid {
 		height: 1000px;
 	}
