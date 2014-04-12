@@ -143,7 +143,7 @@ a.custom {
 }
 
 .west {
-	@include rotate(260deg);
+	@include rotate(270deg);
 }
 
 .east {
@@ -153,7 +153,9 @@ a.custom {
 .ship {
 	height: 10px;
 	width: 10px;
-	background-color: blue;
+	img {
+		max-width: 200px;
+	}
 }
 
 .game-container {

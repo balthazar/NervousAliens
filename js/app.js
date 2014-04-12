@@ -1,10 +1,14 @@
 $(document).ready(function() {
 
-	function addShip(name, x, y, o) {
-		$('.grid').append('<div class="ship"></div>');
+	function addShip(name, x, y, o, img, type) {
+		var width = (type === 'chasseur') ? 80 : 200;
+		var ship = '<div class="ship"><img src="'+img+'" width="'+width+'"px></div>';
+		$('.grid').append(ship);
 		var padding = $('.grid').offset();
 		var niou = $('.grid div:last');
-		niou.offset({ top: padding.top + y * 10, left: padding.left + x * 10 });
+		var orientation = ['north', 'east', 'south', 'west'];
+		niou.addClass(orientation[o]);
+		niou.offset({ top: padding.top + y, left: padding.left + x });
 	}
 
 	function loadGame() {
@@ -21,7 +25,7 @@ $(document).ready(function() {
 						$('.game-container').slideDown().fadeIn();
 						for(var i = 0; i < res.length; i++) {
 							console.log(res[i]);
-							addShip(res[i].name, res[i].x, res[i].y, res[i].orientation);
+							addShip(res[i].name, res[i].x, res[i].y, res[i].orientation, res[i].img, res[i].type);
 						}
 					}, 500)
 				}
@@ -32,7 +36,6 @@ $(document).ready(function() {
 	$.ajax({
 		url:'php/logged.php',
 		success: function(res) {
-			console.log(res);
 			if (res === 'ok') {
 				loadGame();
 			}
