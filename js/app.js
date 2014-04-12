@@ -1,24 +1,46 @@
 $(document).ready(function() {
 
-	$('.launch').click(function() {
+	function addShip(name, x, y, o) {
+		$('.grid').append('<div class="ship"></div>');
+		var padding = $('.grid').offset();
+		var niou = $('.grid div:last');
+		niou.offset({ top: padding.top + y * 10, left: padding.left + x * 10 });
+	}
 
+	function loadGame() {
 		$.ajax({
 			url: 'php/init.php',
 			method: 'POST',
 			data: {init:true},
 			success: function(res) {
-				if (res == "delog") {
-					alert('not connect');
-				}
-				else {
+				if (res !== "delog") {
 					console.log(JSON.parse(res));
+					res = JSON.parse(res);
 					$('.intro').slideUp().fadeOut();
 					setTimeout(function() {
 						$('.game-container').slideDown().fadeIn();
+						for(var i = 0; i < res.length; i++) {
+							console.log(res[i]);
+							addShip(res[i].name, res[i].x, res[i].y, res[i].orientation);
+						}
 					}, 500)
 				}
 			}
 		});
+	}
+
+	$.ajax({
+		url:'php/logged.php',
+		success: function(res) {
+			console.log(res);
+			if (res === 'ok') {
+				loadGame();
+			}
+		}
+	});
+
+	$('.launch').click(function() {
+		loadGame();
 	});
 
 	$('.intro .register').click(function() {
