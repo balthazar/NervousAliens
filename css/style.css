@@ -1,0 +1,229 @@
+/* line 17, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../nfs/zfs-student-3/users/2013/mpillet/.gem/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Coalition";
+  src: url('/css/fonts/Coalition.ttf') format('truetype');
+}
+
+/* line 11, ../scss/style.scss */
+* {
+  outline: none;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 17, ../scss/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: url("http://images.blog-24.com/940000/943000/943369.gif");
+}
+
+/* line 24, ../scss/style.scss */
+hr.custom {
+  width: 90%;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 0;
+}
+
+/* line 31, ../scss/style.scss */
+i.custom {
+  background-color: #1e6bce;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  padding: 4px 10px;
+  min-height: 30px;
+}
+/* line 43, ../scss/style.scss */
+i.custom:hover {
+  background-color: #287CE9;
+}
+
+/* line 48, ../scss/style.scss */
+.intro {
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Coalition";
+}
+/* line 53, ../scss/style.scss */
+.intro .heading {
+  color: #F5F247;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+/* line 58, ../scss/style.scss */
+.intro .launch {
+  height: 200px;
+  background-color: #1e6bce;
+  padding: 20px 50px 10px 50px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+/* line 69, ../scss/style.scss */
+.intro .launch:hover {
+  background-color: #287CE9;
+}
+
+/* line 75, ../scss/style.scss */
+.north {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 79, ../scss/style.scss */
+.south {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 83, ../scss/style.scss */
+.west {
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+/* line 87, ../scss/style.scss */
+.east {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 91, ../scss/style.scss */
+.game-container {
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 1500px;
+  height: 1100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 102, ../scss/style.scss */
+.game-container > .grid {
+  height: 1000px;
+}
+/* line 105, ../scss/style.scss */
+.game-container > .controllers {
+  min-height: 100px;
+  padding: 30px 20px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
