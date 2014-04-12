@@ -42,6 +42,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$(document).on('click', '.ship', function() {
+		var ship = $(this);
+		var id = ship.attr('id').replace('ship', '');
+		console.log(id);
+	});
+
 	$('.launch').click(function() {
 		loadGame();
 	});

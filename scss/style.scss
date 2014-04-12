@@ -154,6 +154,11 @@ a.custom {
 	height: 10px;
 	width: 10px;
 	cursor: pointer;
+	-webkit-transition: all 250ms ease-in;
+	-moz-transition: all 250ms ease-in;
+	-ms-transition: all 250ms ease-in;
+	-o-transition: all 250ms ease-in;
+	transition: all 250ms ease-in;
 	img {
 		max-width: 200px;
 	}
@@ -173,10 +178,18 @@ a.custom {
 	}
 	> .controllers {
 		text-align: left;
+		font-family: "Coalition";
 		min-height: 100px;
-		padding: 30px 20px;
+		padding: 30px 20px 0 20px;
 		width: 100%;
 		bottom: 0;
 		position: absolute;
+		color: white;
+		i span {
+			font-family: "Coalition";
+		}
+		> p {
+			margin-top: 20px;
+		}
 	}
 }
