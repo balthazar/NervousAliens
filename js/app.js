@@ -23,7 +23,7 @@ $(document).ready(function() {
 					$('.intro').slideUp().fadeOut();
 					setTimeout(function() {
 						$('.game-container').slideDown().fadeIn();
-						for(var i = 0; i < res.length; i++) {
+						for (var i = 0; i < res.length; i++) {
 							console.log(res[i]);
 							addShip(res[i].name, res[i].x, res[i].y, res[i].orientation, res[i].img, res[i].type, res[i].id);
 						}

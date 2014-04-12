@@ -26,6 +26,7 @@
 $littleshadow: multiplestars(700);
 $middleshadow: multiplestars(200);
 $bigshadow: multiplestars(100);
+$fatshadow: multiplestars(10);
 
 .back1 {
 	width: 1px;
@@ -81,5 +82,27 @@ $bigshadow: multiplestars(100);
 		height: 3px;
 		background: transparent;
 		box-shadow: $bigshadow;
+	}
+}
+.back4 {
+	width: 5px;
+	height: 5px;
+	background: transparent;
+	box-shadow: $fatshadow;
+	animation: starAnim 250s linear infinite;
+	-moz-animation: starAnim 250s linear infinite;
+	-webkit-animation: starAnim 250s linear infinite;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	&:after {
+		content: " ";
+		position: absolute;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		top: 2000px;
+		width: 5px;
+		height: 5px;
+		background: transparent;
+		box-shadow: $fatshadow;
 	}
 }

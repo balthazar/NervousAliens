@@ -95,7 +95,7 @@ hr.custom {
   width: 90%;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 0;
+  box-shadow: rgba(255, 255, 255, 0.29) 0 2px 0;
 }
 
 /* line 50, ../scss/style.scss */
@@ -289,16 +289,17 @@ a.custom:hover {
   height: 1100px;
   margin: 0 auto;
   margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-border-radius: 4px 4px;
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 170, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 173, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
   min-height: 100px;

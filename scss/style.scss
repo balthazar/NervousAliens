@@ -43,8 +43,8 @@ html {
 hr.custom {
 	width: 90%;
 	border: 0;
-	border-top: 1px solid rgba(255,255,255,.05);
-	box-shadow: rgba(0,0,0,.1) 0 2px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	box-shadow: rgba(255, 255, 255, 0.29) 0 2px 0;
 }
 
 i.custom {
@@ -165,7 +165,8 @@ a.custom {
 	height: 1100px;
 	margin: 0 auto;
 	margin-top: 30px;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(white, .3);
 	@include border-radius(4px, 4px);
 	> .grid {
 		height: 1000px;
