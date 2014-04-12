@@ -8,6 +8,21 @@
 
 @include font-face("Coalition", font-files("Coalition.ttf"));
 
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
 * {
 	outline: none;
 	box-sizing: border-box;
@@ -55,27 +70,66 @@ i.custom {
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
+	.registerBox, .loginBox {
+		display: none;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+input[type="submit"] {
+	visibility: hidden;
+}
+
+input[type="text"], input[type="password"] {
+	font-family: "Coalition";
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: rgba(28, 112, 223, 0.56);
+	border: 1px solid rgba(white, .1);
+	padding: 8px 15px;
+	color: white;
+	@include placeholder {
+		color: rgba(255,255,255,0.3);
+	}
+	&:focus {
+		border-color: rgba(99, 157, 233, 0.93);
+	}
+}
+
+a.custom {
+	cursor:pointer;
+	background-color: rgb(30, 107, 206);
+	text-decoration: none;
+	color: white;
+	@include box-shadow(rgba(black, .3) 0 2px 5px);
+	@include border-radius(4px, 4px);
+	@include transition-property(background-color);
+	@include transition-duration(100ms);
+	&:hover {
+		background-color: #287CE9;
+	}
+}
+
+.intro, .game-container, .registerBox, .loginBox {
+	margin: 0 auto;
+	text-align: center;
 }
 
 .intro {
 	padding: 50px;
-	margin: 0 auto;
-	text-align: center;
 	font-family: "Coalition";
 	.launch {
-		cursor:pointer;
 		height: 200px;
-		background-color: rgb(30, 107, 206);
 		padding: 20px 50px 10px 50px;
-		text-decoration: none;
 		font-size: 40px;
-		color: white;
-		@include box-shadow(rgba(black, .3) 0 2px 5px);
-		@include border-radius(4px, 4px);
-		@include transition-property(background-color);
-		@include transition-duration(100ms);
-		&:hover {
-			background-color: #287CE9;
+	}
+	> p {
+		margin-top: 30px;
+		> a {
+			padding: 10px 15px 7px 20px;
 		}
 	}
 }

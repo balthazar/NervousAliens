@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('/css/fonts/Coalition.ttf') format('truetype');
 }
 
-/* line 11, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 * {
   outline: none;
   box-sizing: border-box;
@@ -77,20 +77,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   user-select: none;
 }
 
-/* line 17, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 body {
   width: 100%;
   height: 100%;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
 
-/* line 28, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 hr.custom {
   width: 90%;
   border: 0;
@@ -98,7 +98,7 @@ hr.custom {
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 0;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 i.custom {
   background-color: #1e6bce;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -124,12 +124,12 @@ i.custom {
   padding: 4px 10px;
   min-height: 30px;
 }
-/* line 47, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 i.custom:hover {
   background-color: #287CE9;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .main {
   position: absolute;
   left: 0;
@@ -137,22 +137,57 @@ i.custom:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* line 60, ../scss/style.scss */
-.intro {
-  padding: 50px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Coalition";
+/* line 73, ../scss/style.scss */
+.main .registerBox, .main .loginBox {
+  display: none;
 }
-/* line 65, ../scss/style.scss */
-.intro .launch {
+
+/* line 78, ../scss/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 82, ../scss/style.scss */
+input[type="submit"] {
+  visibility: hidden;
+}
+
+/* line 86, ../scss/style.scss */
+input[type="text"], input[type="password"] {
+  font-family: "Coalition";
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(28, 112, 223, 0.56);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  color: white;
+}
+/* line 12, ../scss/style.scss */
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 15, ../scss/style.scss */
+input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 18, ../scss/style.scss */
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 21, ../scss/style.scss */
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 97, ../scss/style.scss */
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: rgba(99, 157, 233, 0.93);
+}
+
+/* line 102, ../scss/style.scss */
+a.custom {
   cursor: pointer;
-  height: 200px;
   background-color: #1e6bce;
-  padding: 20px 50px 10px 50px;
   text-decoration: none;
-  font-size: 40px;
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -169,12 +204,38 @@ i.custom:hover {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-/* line 77, ../scss/style.scss */
-.intro .launch:hover {
+/* line 111, ../scss/style.scss */
+a.custom:hover {
   background-color: #287CE9;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
+.intro, .game-container, .registerBox, .loginBox {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 121, ../scss/style.scss */
+.intro {
+  padding: 50px;
+  font-family: "Coalition";
+}
+/* line 124, ../scss/style.scss */
+.intro .launch {
+  height: 200px;
+  padding: 20px 50px 10px 50px;
+  font-size: 40px;
+}
+/* line 129, ../scss/style.scss */
+.intro > p {
+  margin-top: 30px;
+}
+/* line 131, ../scss/style.scss */
+.intro > p > a {
+  padding: 10px 15px 7px 20px;
+}
+
+/* line 137, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -183,7 +244,7 @@ i.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 87, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -192,7 +253,7 @@ i.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 91, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -201,7 +262,7 @@ i.custom:hover {
   transform: rotate(260deg);
 }
 
-/* line 95, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -210,7 +271,7 @@ i.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 99, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 .game-container {
   display: none;
   width: 1500px;
@@ -222,11 +283,11 @@ i.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 107, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 110, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .game-container > .controllers {
   min-height: 100px;
   padding: 30px 20px;
