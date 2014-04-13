@@ -5,7 +5,7 @@ session_start();
 function connect(){
 	if (file_exists("../.credentials")) {
 		$user = explode("\n", file_get_contents("../.credentials"));
-		$link = mysqli_connect('localhost', $user[0], $user[1], 'rush2');
+		$link = mysqli_connect('localhost', $user[0], $user[1], 'nervous_aliens');
 		if (!$link)
 			die('Erreur de connexion ('.mysqli_connect_errno().') '.mysqli_connect_error());
 		return ($link);

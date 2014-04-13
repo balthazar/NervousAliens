@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Warhammer</title>
+		<title>Nervous Aliens</title>
 		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/compiled.css">
