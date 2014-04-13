@@ -123,12 +123,12 @@ i.custom {
   padding: 4px 10px;
   min-height: 30px;
 }
-/* line 62, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 i.custom:hover {
   color: #287CE9;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 .main {
   position: absolute;
   left: 0;
@@ -136,27 +136,27 @@ i.custom:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 73, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .main .registerBox, .main .loginBox {
   display: none;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .flex {
   display: flex;
 }
 
-/* line 82, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .hide {
   display: none;
 }
 
-/* line 86, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 input[type="submit"] {
   visibility: hidden;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 input[type="text"], input[type="password"] {
   font-family: "Main";
   -webkit-border-radius: 2px;
@@ -182,12 +182,12 @@ input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 101, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 input[type="text"]:focus, input[type="password"]:focus {
   border-color: rgba(44, 114, 206, 0.5);
 }
 
-/* line 106, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 a.custom {
   cursor: pointer;
   text-decoration: none;
@@ -209,44 +209,49 @@ a.custom {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-/* line 116, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 a.custom:hover {
   background-color: rgba(40, 124, 233, 0.26);
   border-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 122, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .error-border {
   border-color: rgba(201, 13, 13, 0.5) !important;
 }
 
-/* line 126, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 .intro, .game-container, .registerBox, .loginBox {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 131, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .intro {
   padding: 50px;
   font-family: "Main";
 }
-/* line 134, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .intro .launch {
   height: 200px;
   padding: 20px 50px 10px 50px;
   font-size: 40px;
 }
-/* line 139, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 .intro > p {
   margin-top: 50px;
 }
-/* line 141, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .intro > p > a {
   padding: 10px 15px 7px 20px;
 }
 
-/* line 147, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
+.redcolor {
+  color: red;
+}
+
+/* line 150, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -255,7 +260,7 @@ a.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 151, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -264,7 +269,7 @@ a.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 155, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -273,7 +278,7 @@ a.custom:hover {
   transform: rotate(270deg);
 }
 
-/* line 159, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -282,13 +287,13 @@ a.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 163, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 .ship {
-  height: 10px;
   width: 10px;
+  height: 1px;
   cursor: pointer;
 }
-/* line 167, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .ship img {
   max-width: 200px;
   -webkit-transition: all 250ms ease-in;
@@ -298,7 +303,7 @@ a.custom:hover {
   transition: all 250ms ease-in;
 }
 
-/* line 177, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .game-container {
   display: none;
   position: relative;
@@ -312,16 +317,16 @@ a.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 187, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 189, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .game-container > .grid td {
   width: 10px;
   height: 10px;
 }
-/* line 194, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
   font-family: "Main";
@@ -332,29 +337,29 @@ a.custom:hover {
   position: absolute;
   color: white;
 }
-/* line 203, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .game-container > .controllers .flex {
   margin-top: 10px;
 }
-/* line 205, ../scss/style.scss */
+/* line 208, ../scss/style.scss */
 .game-container > .controllers .flex p {
   margin-right: 80px;
 }
-/* line 208, ../scss/style.scss */
+/* line 211, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child {
   margin-left: auto;
 }
-/* line 210, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child .user {
   margin-right: 10px;
   color: rgba(204, 21, 21, 0.86);
 }
-/* line 215, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .game-container > .controllers .flex i span {
   font-family: "Main";
   font-size: 18px;
 }
-/* line 220, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .game-container > .controllers > p {
   margin-top: 20px;
 }

@@ -48,7 +48,6 @@ hr.custom {
 }
 
 i.custom {
-//	background-color: rgb(30, 107, 206);
 	@include box-shadow(rgba(black, .3) 0 2px 5px);
 	@include border-radius(4px, 4px);
 	@include transition-property(background-color);
@@ -144,6 +143,10 @@ a.custom {
 	}
 }
 
+.redcolor {
+	color: red;
+}
+
 .north {
 	@include rotate(0deg);
 }
@@ -161,8 +164,8 @@ a.custom {
 }
 
 .ship {
-	height: 10px;
 	width: 10px;
+	height:1px;
 	cursor: pointer;
 	img {
 		max-width: 200px;

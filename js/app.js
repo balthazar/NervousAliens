@@ -53,8 +53,14 @@ $(document).ready(function() {
 
 	function resetShipInfos(id) {
 		$('.controllers .info').fadeIn();
-		$('.controllers .info:first i:first-child').html('<span> '+ships[selected1].life+'</span>');
-		$('.controllers .info:last i:first-child').html('<span> '+ships[selected2].life+'</span>');
+		$('.controllers .info:first i:first-child').html('<span> '+ships[selected1].life+'</span>').removeClass('redcolor');
+		$('.controllers .info:last i:first-child').html('<span> '+ships[selected2].life+'</span>').removeClass('redcolor');
+		if (ships[selected1].life == 0) {
+			$('.controllers .info:first i:first-child').addClass('redcolor');
+		}
+		if (ships[selected2].life == 0) {
+			$('.controllers .info:last i:first-child').addClass('redcolor');
+		}
 		if (ships[selected1].type === 'base')
 			$('.controllers .info:first i:last-child').hide();
 		else {
@@ -96,11 +102,33 @@ $(document).ready(function() {
 		}
 		ships[id].x = x;
 		ships[id].y = y;
-		$('#ship'+id).offset({ top: padding.top + y, left: padding.left + x });
+		if (x < 0 || x > 1500 || y < 0 || y > 1000) {
+			ships[id].life = 0;
+		}
+		if (ships[id].life > 0) {
+			$('#ship'+id).offset({ top: padding.top + y, left: padding.left + x });
+		}
+		else {
+			$('#ship'+id).fadeOut();
+			resetShipInfos();
+		}
 	}
 
 	function rotateShip(id) {
-		$('#ship'+id+' img').attr('class', '').addClass(orientation[ships[id].orientation]);
+		if (ships[id].life > 0) {
+			$('#ship'+id+' img').attr('class', '').addClass(orientation[ships[id].orientation]);
+		}
+		else {
+			$('#ship'+id).fadeOut();
+		}
+	}
+
+	function shoot(id) {
+		var shoot = '<div class="shoot"><img src="sprites/fire.gif" width="100px"></div>';
+		$('.grid').append(shoot);
+		var padding = $('.grid').offset();
+		var niou = $('.grid div:last');
+		niou.offset({ top: padding.top + ships[id].y, left: padding.left + ships[id].x });
 	}
 
 	$('.icon-lock2').click(function() {
@@ -160,6 +188,7 @@ $(document).ready(function() {
 		}
 		else if (e.which === 96) {
 			//shoot p1
+			shoot(selected1);
 		}
 		else if (e.which === 97) {
 			//ship1 p1
@@ -188,6 +217,7 @@ $(document).ready(function() {
 		}
 		else if (e.which === 32) {
 			//shoot p2
+			shoot(selected2);
 		}
 		else if (e.which === 49) {
 			//ship1 p2

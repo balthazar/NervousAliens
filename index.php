@@ -43,19 +43,6 @@
 			<p class="messageInfo"></p>
 			<div class="game-container">
 				<div class="grid">
-<table>
-<?php
-/*
-	for ($i = 0; $i < 100; $i++) {
-		echo "<tr>\n";
-		for ($y = 0; $y < 150; $y++) {
-			echo "<td></td>\n";
-		}
-		echo "</tr>\n";
-	}
- */
-?>
-</table>
 				</div>
 				<hr class="custom">
 				<div class="controllers">
