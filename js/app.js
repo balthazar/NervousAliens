@@ -127,9 +127,11 @@ $(document).ready(function() {
 	function checkWin() {
 		if (cptship1 == 0) {
 			$('.win').slideDown().fadeIn().html('ALIENS WIN !<p><i class="icon-undo2"></i> back to Menu</p>');
+			cptship2 = 10;
 		}
 		else if (cptship2 == 0) {
 			$('.win').slideDown().fadeIn().html('TECHNOCRATS WIN !<p><i class="icon-undo2"></i> Back to Menu</p>');
+			cptship1 = 10;
 		}
 	}
 

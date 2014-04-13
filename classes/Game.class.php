@@ -38,7 +38,7 @@ final Class Game
 				'orientation' => Game::EAST,
 				'img' => 'sprites/black/black2.png',
 				'race' => 0,
-				'life' => 10,
+				'life' => 20,
 				'power' => 3
 			)),
 			new Destroyer (array(
@@ -49,7 +49,7 @@ final Class Game
 				'orientation' => Game::EAST,
 				'img' => 'sprites/black/black3.png',
 				'race' => 0,
-				'life' => 10,
+				'life' => 50,
 				'power' => 5
 			)),
 			new Destroyer (array(
@@ -60,7 +60,7 @@ final Class Game
 				'orientation' => Game::EAST,
 				'img' => 'sprites/black/black4.png',
 				'race' => 0,
-				'life' => 20,
+				'life' => 100,
 				'power' => 10
 			)),
 			new Mothership (array(
@@ -71,7 +71,7 @@ final Class Game
 				'orientation' => Game::EAST,
 				'img' => 'sprites/black/baseblack.png',
 				'race' => 0,
-				'life' => 200
+				'life' => 300
 			))
 		);
 		$ships_p2 = array(
@@ -94,7 +94,7 @@ final Class Game
 				'orientation' => Game::WEST,
 				'img' => 'sprites/alien/alien2.png',
 				'race' => 1,
-				'life' => 10,
+				'life' => 20,
 				'power' => 3
 			)),
 			new Destroyer (array(
@@ -105,7 +105,7 @@ final Class Game
 				'orientation' => Game::WEST,
 				'img' => 'sprites/alien/alien3.png',
 				'race' => 1,
-				'life' => 10,
+				'life' => 50,
 				'power' => 5
 			)),
 			new Destroyer (array(
@@ -116,7 +116,7 @@ final Class Game
 				'orientation' => Game::WEST,
 				'img' => 'sprites/alien/alien4.png',
 				'race' => 1,
-				'life' => 20,
+				'life' => 100,
 				'power' => 10
 			)),
 			new Mothership (array(
@@ -127,7 +127,7 @@ final Class Game
 				'orientation' => Game::WEST,
 				'img' => 'sprites/alien/basealien.png',
 				'race' => 1,
-				'life' => 200
+				'life' => 300
 			))
 		);
 

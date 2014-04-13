@@ -11,5 +11,4 @@ Return a random value between 1 and 6.
 
 Winner (Player $p1, Player $p2)
 Check if someone has won the game and and the game;
----------------------------------------------------------------------- Came ->
-
+---------------------------------------------------------------------- Game ->
