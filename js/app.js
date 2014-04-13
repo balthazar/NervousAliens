@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	function addShip(name, x, y, o, img, type, id) {
 		var width = (type === 'chasseur') ? 80 : 200;
-		var ship = '<div class="ship" id="ship'+id+'"><img src="'+img+'" width="'+width+'"px></div>';
+		var ship = '<div class="ship" id="ship'+id+'"><img src="'+img+'" width="'+width+'px"></div>';
 		$('.grid').append(ship);
 		var padding = $('.grid').offset();
 		var niou = $('.grid div:last');
@@ -51,20 +51,19 @@ $(document).ready(function() {
 		});
 	}
 
-	function resetShipInfos() {
+	function resetShipInfos(id) {
 		$('.controllers .info').fadeIn();
-		$('.controllers .info i:last-child').fadeIn();
 		$('.controllers .info:first i:first-child').html('<span> '+ships[selected1].life+'</span>');
 		$('.controllers .info:last i:first-child').html('<span> '+ships[selected2].life+'</span>');
 		if (ships[selected1].type === 'base')
 			$('.controllers .info:first i:last-child').hide();
 		else {
-			$('.controllers .info:first i:last-child').html('<span> '+ships[selected1].dmg+'</span>');
+			$('.controllers .info:first i:last-child').html('<span> '+ships[selected1].power+'</span>').fadeIn();
 		}
 		if (ships[selected2].type === 'base')
 			$('.controllers .info:last i:last-child').hide();
 		else {
-			$('.controllers .info:last i:last-child').html('<span> '+ships[selected2].dmg+'</span>');
+			$('.controllers .info:last i:last-child').html('<span> '+ships[selected2].power+'</span>').fadeIn();
 		}
 		$('.selected:first').text(ships[selected1].name);
 		$('.selected:last').text(ships[selected2].name);
@@ -125,105 +124,101 @@ $(document).ready(function() {
 	function keys(e) {
 		if (e.which === 38) {
 			//top 1
-			moveShip(selected1, 'up');
+			moveShip(selected2, 'up');
 		}
 		else if (e.which === 39) {
 			//right 1
-			ships[selected1].orientation += (ships[selected1].orientation == 3) ? -3 : 1;
-			rotateShip(selected1);
-		}
-		else if (e.which === 40) {
-			//down 1
-			moveShip(selected1, 'down');
-		}
-		else if (e.which === 37) {
-			//left 1
-			ships[selected1].orientation -= (ships[selected1].orientation == 0) ? -3 : 1;
-			rotateShip(selected1);
-		}
-		else if (e.which === 87) {
-			//up 2
-			moveShip(selected2, 'up');
-		}
-		else if (e.which === 65) {
-			//left 2
-			ships[selected2].orientation -= (ships[selected2].orientation == 0) ? -3 : 1;
-			rotateShip(selected2);
-		}
-		else if (e.which === 68) {
-			//right 2
 			ships[selected2].orientation += (ships[selected2].orientation == 3) ? -3 : 1;
 			rotateShip(selected2);
 		}
+		else if (e.which === 40) {
+			//down 1
+			moveShip(selected2, 'down');
+		}
+		else if (e.which === 37) {
+			//left 1
+			ships[selected2].orientation -= (ships[selected2].orientation == 0) ? -3 : 1;
+			rotateShip(selected2);
+		}
+		else if (e.which === 87) {
+			//up 2
+			moveShip(selected1, 'up');
+		}
+		else if (e.which === 65) {
+			//left 2
+			ships[selected1].orientation -= (ships[selected1].orientation == 0) ? -3 : 1;
+			rotateShip(selected1);
+		}
+		else if (e.which === 68) {
+			//right 2
+			ships[selected1].orientation += (ships[selected1].orientation == 3) ? -3 : 1;
+			rotateShip(selected1);
+		}
 		else if (e.which === 83) {
 			//down 2
-			moveShip(selected2, 'down');
+			moveShip(selected1, 'down');
 		}
 		else if (e.which === 96) {
 			//shoot p1
 		}
 		else if (e.which === 97) {
 			//ship1 p1
-			selected1 = 0;
+			selected2 = 5;
+			resetShipInfos(0);
 		}
 		else if (e.which === 98) {
 			//ship2 p1
-			selected1 = 1;
+			selected2 = 6;
+			resetShipInfos(0);
 		}
 		else if (e.which === 99) {
 			//ship3 p1
-			selected1 = 2;
+			selected2 = 7;
+			resetShipInfos(0);
 		}
 		else if (e.which === 100) {
 			//ship4 p1
-			selected1 = 3;
+			selected2 = 8;
+			resetShipInfos(0);
 		}
 		else if (e.which === 101) {
 			//base p1
-			selected1 = 4;
+			selected2 = 9;
+			resetShipInfos(0);
 		}
 		else if (e.which === 32) {
 			//shoot p2
 		}
 		else if (e.which === 49) {
 			//ship1 p2
-			selected2 = 5;
+			selected1 = 0;
+			resetShipInfos(1);
 		}
 		else if (e.which === 50) {
 			//ship2 p2
-			selected2 = 6;
+			selected1 = 1;
+			resetShipInfos(1);
 		}
 		else if (e.which === 51) {
 			//ship3 p2
-			selected2 = 7;
+			selected1 = 2;
+			resetShipInfos(1);
 		}
 		else if (e.which === 52) {
 			//ship4 p2
-			selected2 = 8;
+			selected1 = 3;
+			resetShipInfos(1);
 		}
 		else if (e.which === 53) {
 			//base p2
-			selected2 = 9;
+			selected1 = 4;
+			resetShipInfos(1);
 		}
 		console.log(e.which);
 	}
 
 	$(document).keydown(function(e) {
 		keys(e);
-	});
-
-	$(document).on('click', '.ship', function() {
-		var ship = $(this);
-		var id = ship.attr('id').replace('ship', '');
-		selected = (selected == id) ? null : id ;
-		if (selected) {
-		}
-		else {
-			$('.controllers .info').fadeOut();
-			$('.selected').text('NONE');
-		}
-		console.log(id);
-		console.log(ships[0]);
 	});
 
 	$('.launch').click(function() {
@@ -261,7 +256,7 @@ $(document).ready(function() {
 			$.ajax({
 				method: 'POST',
 				url: 'php/register.php',
-				data: {login: elems[0].value, password: elems[1].value },
+				data: { login: elems[0].value, password: elems[1].value },
 				success: function(res) {
 					if (res === 'ok') {
 						$('.registerBox').fadeOut();

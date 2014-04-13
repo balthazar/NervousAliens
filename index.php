@@ -59,9 +59,6 @@
 				</div>
 				<hr class="custom">
 				<div class="controllers">
-					<i class="icon-undo custom"></i>
-					<i class="icon-redo custom"></i>
-					<i class="icon-disk custom"></i>
 					<div class="flex">
 						<p>Player 1 : <span class="selected">NONE</span>
 							<span class="info hide">

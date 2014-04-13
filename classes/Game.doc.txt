@@ -1,0 +1,15 @@
+Game ----------------------------------------------------------------------
+The Game class handles a new game game between two player.
+
+An instance can be constructed from two player name :
+new Game("name_player1", "name_player2")
+
+The class provides the following methods :
+
+Int rollDice();
+Return a random value between 1 and 6.
+
+Winner (Player $p1, Player $p2)
+Check if someone has won the game and and the game;
+---------------------------------------------------------------------- Came ->
+

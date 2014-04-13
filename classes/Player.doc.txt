@@ -1,0 +1,19 @@
+<- Player ----------------------------------------------------------------------
+The Player class create a new player from two constitutives ("name" and an array
+of ships objects given by the class Ships.class.php);
+
+Both of theses caracteristics are needed to construct an instance of this class.
+
+A static variable $verbose allows you to see some debug infos.
+
+This class provides the followin methods:
+Access in reading on both of its attributes by getName() and getShips().
+
+string		doc()
+Return this documentation.
+
+void		play()
+Check if the player can play first, then if he can, call the play() method
+for the ship selected by the player.
+
+---------------------------------------------------------------------- Player ->
