@@ -3,4 +3,14 @@ The laser is a new weapon,
 
 It takes a name, an ammo and a weapon_position if you want to set another
 position (default on top)
+
+doc()
+print this message, but you know that uh ?
+
+shoot(listship, current)
+tentative to shoot, with a rolldice
+
+getters for ammunation & id
+setter for ammunation
+
 ---------------------------------------------------------------------- Laser ->

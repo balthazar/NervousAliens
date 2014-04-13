@@ -66,11 +66,6 @@ final class Player
 			return (FALSE);
 	}
 
-	private function	selectShip()
-	{
-		//TODO, given by POST.
-	}
-
 	public function		play()
 	{
 		if (canPlay() === TRUE)

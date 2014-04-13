@@ -16,4 +16,7 @@ void		play()
 Check if the player can play first, then if he can, call the play() method
 for the ship selected by the player.
 
+canPlay()
+Check if player can... play.
+
 ---------------------------------------------------------------------- Player ->

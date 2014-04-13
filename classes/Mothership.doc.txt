@@ -4,4 +4,9 @@ Create a MotherShip,
 No need to have a weapon active !
 
 See Ship class for more details
+
+doc()
+print a message like this, or maybe this one exacty im to confused
+
+
 ---------------------------------------------------------------------- Mothership ->
