@@ -68,6 +68,13 @@ abstract class Ship {
 
 	abstract public function setWeapons();
 
+	public static function doc() {
+		if (file_exists('Ship.doc.txt')) {
+			print(file_get_contents('Ship.doc.txt'));
+		}
+		return "No doc.";
+	}
+
 	public function play( array $allShips ){
 		$this->activate = True;
 		$this->order();

@@ -11,6 +11,13 @@ class Mothership extends Ship {
 	public function setWeapons(){
 		$this->_weapons = null;
 	}
+
+	public static function doc() {
+		if (file_exists('Mothership.doc.txt')) {
+			print(file_get_contents('Mothership.doc.txt'));
+		}
+		return "No doc.";
+	}
 }
 
 ?>

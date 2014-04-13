@@ -171,12 +171,12 @@ final Class Game
 			print($p1->getName()." won");
 		if (count($p1->getShips()) == 0 && count($p2->getShips()) ==  0)
 			print("draw");
-		//code for end the game;
 	}
 	public static function doc()
 	{
 		if (file_exists("Game.doc.txt"))
 			return (file_get_contents("Game.doc.txt"));
+		return "No doc.";
 	}
 
 	public function __destruct()

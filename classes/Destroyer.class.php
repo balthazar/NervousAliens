@@ -27,6 +27,13 @@ class Destroyer extends Ship {
 		$gun2 = new Laser( 2 );
 		$this->_weapons = array('1' => $gun1, '2' => $gun2);
 	}
+
+	public static function doc() {
+		if (file_exists('Destroyer.doc.txt')) {
+			print(file_get_contents('Destroyer.doc.txt'));
+		}
+		return "No doc.";
+	}
 }
 
 ?>

@@ -20,8 +20,29 @@ weapons: the array of weapons
 
 Class provide getters & setters for the majority of the attributes
 
+construct(array)
+Takes an array, id, name, x, y, img, orientation and life MUST be sets
+
+getData()
+function to return the importants attributes of the instance
+well-formated in an array, very usefull when you want infos client-side.
+
+setData()
+function to set data (like x, y, orientation or pp). Usefull when you move
+a ship.
+
+reset()
+Reset the boost, the state and maxmove of the current instance
+
+move()
+move a ship.
+
+getWeaponByid(id)
+return the weapon concerned in the list of weapons of the instance
 
 
+order()
+send an order to the instance
 
 
 ---------------------------------------------------------------------- Ship ->

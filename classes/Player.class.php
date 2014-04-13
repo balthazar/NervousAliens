@@ -34,13 +34,11 @@ final class Player
 			print($this. " constructed.\n");
 	}
 
-	public function		doc()
-	{
-		$file = "No documentation for this class.";
-
-		if (file_exists("./Player.doc.txt"))
-			$file = file_get_contents("./Player.doc.txt");
-		return ($file);
+	public static function doc() {
+		if (file_exists('Player.doc.txt')) {
+			print(file_get_contents('Player.doc.txt'));
+		}
+		return "No doc.";
 	}
 
 	public function		getName()

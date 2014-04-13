@@ -33,6 +33,13 @@ Class Laser implements IWeapon
 		return $this->_id;
 	}
 
+	public static function doc() {
+		if (file_exists('Laser.doc.txt')) {
+			print(file_get_contents('Laser.doc.txt'));
+		}
+		return "No doc.";
+	}
+
     public function shoot($listShips, $current)
     {
         $range = Game::rollDice();
