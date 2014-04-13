@@ -1,0 +1,7 @@
+Mothership-------------------------------------------------------------------
+Create a MotherShip,
+
+No need to have a weapon active !
+
+See Ship class for more details
+---------------------------------------------------------------------- Mothership ->

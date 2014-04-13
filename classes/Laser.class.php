@@ -7,7 +7,7 @@ Class Laser implements IWeapon
     private $_id;
     private $_name;
     private $_ammunition = 0;
-    private $_weapon_position;
+    private $_weapon_position = 'top';
     public static $verbose = False;
 
     public function __construct($id)

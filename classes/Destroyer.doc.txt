@@ -1,0 +1,10 @@
+Destroyer ----------------------------------------------------------------------
+
+The destroyer is a ship designed to battle.
+
+
+He needs at least one weapon to be properly instancied !
+
+
+See Ship class for more details
+---------------------------------------------------------------------- Destroyer ->

@@ -1,0 +1,6 @@
+Laser ----------------------------------------------------------------------
+The laser is a new weapon,
+
+It takes a name, an ammo and a weapon_position if you want to set another
+position (default on top)
+---------------------------------------------------------------------- Laser ->

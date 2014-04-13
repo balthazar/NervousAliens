@@ -54,19 +54,19 @@ abstract class Ship {
 	}
 
 	public function getId(){return $this->_id; }
-		public function getPP(){return $this->_PP; }
-		public function getActivate(){return $this->_activate; }
-		public function getX(){return $this->_coordX; }
-		public function getY(){return $this->_coordY; }
-		public function getOrientation(){return $this->_orientation; }
-		public function getSize(){return $this->_size; }
-		public function setPP($pp){$this->_PP = $pp; }
-		public function setX($x){$this->_coordX = $x; }
-		public function setY($y){$this->_coordY = $y; }
-		public function setOrientation($o){$this->_orientation = $o; }
-		public function setActivate( bool $f ){	$this->_activate = $f; }
+	public function getPP(){return $this->_PP; }
+	public function getActivate(){return $this->_activate; }
+	public function getX(){return $this->_coordX; }
+	public function getY(){return $this->_coordY; }
+	public function getOrientation(){return $this->_orientation; }
+	public function getSize(){return $this->_size; }
+	public function setPP($pp){$this->_PP = $pp; }
+	public function setX($x){$this->_coordX = $x; }
+	public function setY($y){$this->_coordY = $y; }
+	public function setOrientation($o){$this->_orientation = $o; }
+	public function setActivate( bool $f ){	$this->_activate = $f; }
 
-		abstract public function setWeapons();
+	abstract public function setWeapons();
 
 	public function play( array $allShips ){
 		$this->activate = True;

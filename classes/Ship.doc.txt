@@ -1,0 +1,27 @@
+Ship ----------------------------------------------------------------------
+
+id: id of the ship
+name: name of the ship
+coordX : coordinate x of the ship on the map
+coordY : coordinate y of the ship on the map
+orientation: its orientation (north south east west)
+size: size of the ship (optionnal)
+image: image
+life: points of life of the ship
+power: its power
+speed: the speed of the reactors
+shields: intensity of magic shields
+pp: pp to distribute on each turn
+boost: special ability
+activate: if the ship has been activated
+maxMove: max number of move on it
+weapons: the array of weapons
+
+
+Class provide getters & setters for the majority of the attributes
+
+
+
+
+
+---------------------------------------------------------------------- Ship ->
