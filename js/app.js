@@ -24,14 +24,12 @@ $(document).ready(function() {
 			data: {init:true},
 			success: function(res) {
 				if (res !== "delog") {
-					console.log(JSON.parse(res));
 					res = JSON.parse(res);
 					ships = res;
 					$('.intro').slideUp().fadeOut();
 					setTimeout(function() {
 						$('.game-container').slideDown().fadeIn();
 						for (var i = 0; i < res.length; i++) {
-							console.log(res[i]);
 							addShip(res[i].name, res[i].x, res[i].y, res[i].orientation, res[i].img, res[i].type, res[i].id);
 						}
 					}, 500);
@@ -104,8 +102,9 @@ $(document).ready(function() {
 		}
 		ships[id].x = x;
 		ships[id].y = y;
-		if (x < 0 || x > 1500 || y < 0 || y > 1000) {
+		if ((x < 0 || x > 1500 || y < 0 || y > 1000) && ships[id].life > 0) {
 			ships[id].life = 0;
+			checkDead(id);
 		}
 		if (ships[id].life > 0) {
 			$('#ship'+id).offset({ top: padding.top + y, left: padding.left + x });
@@ -127,12 +126,16 @@ $(document).ready(function() {
 
 	function checkWin() {
 		if (cptship1 == 0) {
-			
+			$('.win').slideDown().fadeIn().html('ALIENS WIN !<p><i class="icon-undo2"></i> back to Menu</p>');
 		}
 		else if (cptship2 == 0) {
-			
+			$('.win').slideDown().fadeIn().html('TECHNOCRATS WIN !<p><i class="icon-undo2"></i> Back to Menu</p>');
 		}
 	}
+
+	$(document).on('click', '.win p', function() {
+		window.location.href = "/";
+	});
 
 	function checkDead(id) {
 		if (ships[id].life <= 0) {
@@ -153,7 +156,6 @@ $(document).ready(function() {
 				ships[i].life--;
 				resetShipInfos();
 				checkDead(i);
-				console.log('hit');
 				return;
 			}
 		}
@@ -165,7 +167,8 @@ $(document).ready(function() {
 			$('.grid').append(shoot);
 			var niou = $('.grid div:last');
 			niou.children().addClass(orientation[ships[id].orientation]);
-			niou.offset({ top: ships[id].y, left: ships[id].x });
+			var padding = $('.grid').offset();
+			niou.offset({ top: ships[id].y + padding.top, left: ships[id].x + padding.left });
 			var or = orientation[ships[id].orientation];
 			if (or == 'north') {
 				niou.animate({
@@ -210,20 +213,32 @@ $(document).ready(function() {
 		}
 	}
 
-	$('.icon-lock2').click(function() {
+	function delog() {
 		$.ajax({
 			url: 'php/delog.php',
 			success: function(res) {
 				window.location.href="/";
 			}
 		});
+	}
+
+	$('.icon-switch').click(function() {
+		delog();
+	});
+
+	$('.delog').click(function() {
+		delog();
 	});
 
 	$.ajax({
 		url:'php/logged.php',
 		success: function(res) {
-			if (res === 'ok') {
-				loadGame();
+			if (res !== 'ok') {
+				$('.intro p a:first-child').fadeIn();
+				$('.intro p a:nth-child(2)').fadeIn();
+			}
+			else {
+				$('.intro p .delog').fadeIn();
 			}
 		}
 	});
@@ -323,11 +338,11 @@ $(document).ready(function() {
 			selected1 = 4;
 			resetShipInfos(1);
 		}
-		console.log(e.which);
 	}
 
 	$(document).keydown(function(e) {
-		keys(e);
+		if (ships.length > 0)
+			keys(e);
 	});
 
 	$('.launch').click(function() {
@@ -337,11 +352,13 @@ $(document).ready(function() {
 	$('.intro .register').click(function() {
 		$('.loginBox').slideUp().fadeOut();
 		$('.registerBox').slideDown().fadeIn();
+		$('.registerBox input:first-child').focus();
 	});
 
 	$('.intro .login').click(function() {
 		$('.loginBox').slideDown().fadeIn();
 		$('.registerBox').slideUp().fadeOut();
+		$('.loginBox input:first-child').focus();
 	});
 
 	$('.registerForm').submit(function(event) {

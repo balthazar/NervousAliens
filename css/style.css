@@ -243,21 +243,57 @@ a.custom:hover {
 }
 /* line 140, ../scss/style.scss */
 .intro > p > a {
+  display: none;
   padding: 10px 15px 7px 20px;
 }
+/* line 144, ../scss/style.scss */
+.intro > p .delog {
+  padding-right: 18px;
+}
 
-/* line 146, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .redcolor {
   color: red;
 }
 
-/* line 150, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .shoot {
   width: 100px;
   height: 100px;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
+.win {
+  display: none;
+  color: white;
+  font-family: "Main";
+  font-size: 42px;
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 10px solid rgba(196, 25, 25, 0.42);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 60px 50px 80px 50px;
+}
+/* line 177, ../scss/style.scss */
+.win p {
+  margin-top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* line 181, ../scss/style.scss */
+.win p:hover {
+  color: #287CE9;
+}
+
+/* line 187, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -266,7 +302,7 @@ a.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 159, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -275,7 +311,7 @@ a.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 163, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -284,7 +320,7 @@ a.custom:hover {
   transform: rotate(270deg);
 }
 
-/* line 167, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -293,13 +329,13 @@ a.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 171, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .ship {
   width: 10px;
   height: 1px;
   cursor: pointer;
 }
-/* line 175, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .ship img {
   max-width: 200px;
   -webkit-transition: all 250ms ease-in;
@@ -309,7 +345,7 @@ a.custom:hover {
   transition: all 250ms ease-in;
 }
 
-/* line 185, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 .game-container {
   display: none;
   position: relative;
@@ -323,16 +359,16 @@ a.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 195, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 197, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 .game-container > .grid td {
   width: 10px;
   height: 10px;
 }
-/* line 202, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
   font-family: "Main";
@@ -343,29 +379,29 @@ a.custom:hover {
   position: absolute;
   color: white;
 }
-/* line 211, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
 .game-container > .controllers .flex {
   margin-top: 10px;
 }
-/* line 213, ../scss/style.scss */
+/* line 245, ../scss/style.scss */
 .game-container > .controllers .flex p {
   margin-right: 80px;
 }
-/* line 216, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child {
   margin-left: auto;
 }
-/* line 218, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child .user {
   margin-right: 10px;
   color: rgba(204, 21, 21, 0.86);
 }
-/* line 223, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 .game-container > .controllers .flex i span {
   font-family: "Main";
   font-size: 18px;
 }
-/* line 228, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .game-container > .controllers > p {
   margin-top: 20px;
 }
