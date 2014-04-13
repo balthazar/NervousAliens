@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var padding = $('.grid').offset();
 		var niou = $('.grid div:last');
 		var orientation = ['north', 'east', 'south', 'west'];
-		niou.addClass(orientation[o]);
+		niou.children().addClass(orientation[o]);
 		niou.offset({ top: padding.top + y, left: padding.left + x });
 	}
 

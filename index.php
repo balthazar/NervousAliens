@@ -44,15 +44,15 @@
 				<div class="grid">
 <table>
 <?php
-
-	for ($i = 0; i < 1000; i++) {
+/*
+	for ($i = 0; $i < 100; $i++) {
 		echo "<tr>\n";
-		for (var $y = 0; y < 1500; y++) {
+		for ($y = 0; $y < 150; $y++) {
 			echo "<td></td>\n";
 		}
 		echo "</tr>\n";
 	}
-
+ */
 ?>
 </table>
 				</div>

@@ -1,4 +1,4 @@
-/* line 17, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,55 +20,55 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
-  font-family: "Coalition";
-  src: url('/css/fonts/Coalition.ttf') format('truetype');
+  font-family: "Main";
+  src: url('/css/fonts/xirod.ttf') format('truetype');
 }
 
-/* line 27, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 * {
   outline: none;
   box-sizing: border-box;
@@ -77,20 +77,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   user-select: none;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 body {
   width: 100%;
   height: 100%;
 }
 
-/* line 38, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 hr.custom {
   width: 90%;
   border: 0;
@@ -98,7 +98,7 @@ hr.custom {
   box-shadow: rgba(255, 255, 255, 0.29) 0 2px 0;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 i.custom {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -123,12 +123,12 @@ i.custom {
   padding: 4px 10px;
   min-height: 30px;
 }
-/* line 63, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 i.custom:hover {
   background-color: #287CE9;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .main {
   position: absolute;
   left: 0;
@@ -136,24 +136,24 @@ i.custom:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 74, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .main .registerBox, .main .loginBox {
   display: none;
 }
 
-/* line 79, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 .hide {
   display: none;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 input[type="submit"] {
   visibility: hidden;
 }
 
-/* line 87, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 input[type="text"], input[type="password"] {
-  font-family: "Coalition";
+  font-family: "Main";
   -webkit-border-radius: 2px;
   border-radius: 2px;
   padding: 8px 15px;
@@ -161,28 +161,28 @@ input[type="text"], input[type="password"] {
   background-color: rgba(22, 22, 22, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 13, ../scss/style.scss */
+/* line 12, ../scss/style.scss */
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 16, ../scss/style.scss */
+/* line 15, ../scss/style.scss */
 input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 19, ../scss/style.scss */
+/* line 18, ../scss/style.scss */
 input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 22, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 98, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 input[type="text"]:focus, input[type="password"]:focus {
   border-color: rgba(44, 114, 206, 0.5);
 }
 
-/* line 103, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
 a.custom {
   cursor: pointer;
   text-decoration: none;
@@ -204,44 +204,44 @@ a.custom {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-/* line 113, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 a.custom:hover {
   background-color: rgba(40, 124, 233, 0.26);
   border-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 119, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .error-border {
   border-color: rgba(201, 13, 13, 0.5) !important;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 .intro, .game-container, .registerBox, .loginBox {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 128, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .intro {
   padding: 50px;
-  font-family: "Coalition";
+  font-family: "Main";
 }
-/* line 131, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .intro .launch {
   height: 200px;
   padding: 20px 50px 10px 50px;
   font-size: 40px;
 }
-/* line 136, ../scss/style.scss */
+/* line 135, ../scss/style.scss */
 .intro > p {
   margin-top: 50px;
 }
-/* line 138, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .intro > p > a {
   padding: 10px 15px 7px 20px;
 }
 
-/* line 144, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -250,7 +250,7 @@ a.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 148, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -259,7 +259,7 @@ a.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 152, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -268,7 +268,7 @@ a.custom:hover {
   transform: rotate(270deg);
 }
 
-/* line 156, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -277,23 +277,23 @@ a.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 160, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .ship {
   height: 10px;
   width: 10px;
   cursor: pointer;
+}
+/* line 163, ../scss/style.scss */
+.ship img {
+  max-width: 200px;
   -webkit-transition: all 250ms ease-in;
   -moz-transition: all 250ms ease-in;
   -ms-transition: all 250ms ease-in;
   -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
-/* line 169, ../scss/style.scss */
-.ship img {
-  max-width: 200px;
-}
 
-/* line 174, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 .game-container {
   display: none;
   width: 1500px;
@@ -306,24 +306,25 @@ a.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 183, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 186, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
+.game-container > .grid td {
+  width: 10px;
+  height: 10px;
+}
+/* line 189, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
-  font-family: "Coalition";
+  font-family: "Main";
   min-height: 100px;
   padding: 30px 20px 0 20px;
   width: 100%;
   bottom: 0;
   position: absolute;
   color: white;
-}
-/* line 195, ../scss/style.scss */
-.game-container > .controllers i span {
-  font-family: "Coalition";
 }
 /* line 198, ../scss/style.scss */
 .game-container > .controllers > p {

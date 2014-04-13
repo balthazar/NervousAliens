@@ -6,8 +6,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/font-face";
 
-@include font-face("Coalition", font-files("Coalition.ttf"));
-//http://www.dafont.com/fr/prometheus.font
+@include font-face("Main", font-files("xirod.ttf"));
 
 @mixin placeholder {
     &::-webkit-input-placeholder {
@@ -85,7 +84,7 @@ input[type="submit"] {
 }
 
 input[type="text"], input[type="password"] {
-	font-family: "Coalition";
+	font-family: "Main";
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	padding: 8px 15px;
@@ -127,7 +126,7 @@ a.custom {
 
 .intro {
 	padding: 50px;
-	font-family: "Coalition";
+	font-family: "Main";
 	.launch {
 		height: 200px;
 		padding: 20px 50px 10px 50px;
@@ -161,13 +160,13 @@ a.custom {
 	height: 10px;
 	width: 10px;
 	cursor: pointer;
-	-webkit-transition: all 250ms ease-in;
-	-moz-transition: all 250ms ease-in;
-	-ms-transition: all 250ms ease-in;
-	-o-transition: all 250ms ease-in;
-	transition: all 250ms ease-in;
 	img {
 		max-width: 200px;
+		-webkit-transition: all 250ms ease-in;
+		-moz-transition: all 250ms ease-in;
+		-ms-transition: all 250ms ease-in;
+		-o-transition: all 250ms ease-in;
+		transition: all 250ms ease-in;
 	}
 }
 
@@ -182,19 +181,20 @@ a.custom {
 	@include border-radius(4px, 4px);
 	> .grid {
 		height: 1000px;
+		td {
+			width: 10px;
+			height: 10px;
+		}
 	}
 	> .controllers {
 		text-align: left;
-		font-family: "Coalition";
+		font-family: "Main";
 		min-height: 100px;
 		padding: 30px 20px 0 20px;
 		width: 100%;
 		bottom: 0;
 		position: absolute;
 		color: white;
-		i span {
-			font-family: "Coalition";
-		}
 		> p {
 			margin-top: 20px;
 		}
