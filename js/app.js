@@ -64,20 +64,20 @@ $(document).ready(function() {
 
 	$('.registerForm').submit(function(event) {
 		var elems = $('.registerForm input');
-		$(elems[0]).css('border-color', 'rgba(255, 255, 255, 0.1)');
-		$(elems[1]).css('border-color', 'rgba(255, 255, 255, 0.1)');
-		$(elems[2]).css('border-color', 'rgba(255, 255, 255, 0.1)');
+		$(elems[0]).removeClass('error-border');
+		$(elems[1]).removeClass('error-border');
+		$(elems[2]).removeClass('error-border');
 		if (elems[0].value.length === 0) {
-			$(elems[0]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[0]).addClass('error-border');
 		}
 		else if (elems[1].value.length === 0) {
-			$(elems[1]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[1]).addClass('error-border');
 		}
 		else if (elems[2].value.length === 0) {
-			$(elems[2]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[2]).addClass('error-border');
 		}
 		else if (elems[1].value !== elems[2].value) {
-			$(elems[2]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[2]).addClass('error-border');
 		}
 		else {
 			$.ajax({
@@ -89,12 +89,12 @@ $(document).ready(function() {
 						$('.registerBox').fadeOut();
 					}
 					else if (res === 'already') {
-						$(elems[0]).css('border-color', 'rgb(187, 19, 19)');
+						$(elems[0]).addClass('error-border');
 					}
 					else {
-						$(elems[0]).css('border-color', 'rgb(187, 19, 19)');
-						$(elems[1]).css('border-color', 'rgb(187, 19, 19)');
-						$(elems[2]).css('border-color', 'rgb(187, 19, 19)');
+						$(elems[0]).addClass('error-border');
+						$(elems[1]).addClass('error-border');
+						$(elems[2]).addClass('error-border');
 					}
 				}
 			});
@@ -104,13 +104,13 @@ $(document).ready(function() {
 
 	$('.loginForm').submit(function(event) {
 		var elems = $('.loginForm input');
-		$(elems[0]).css('border-color', 'rgba(255, 255, 255, 0.1)');
-		$(elems[1]).css('border-color', 'rgba(255, 255, 255, 0.1)');
+		$(elems[0]).removeClass('error-border');
+		$(elems[1]).removeClass('error-border');
 		if (elems[0].value.length === 0) {
-			$(elems[0]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[0]).addClass('error-border');
 		}
 		else if (elems[1].value.length === 0) {
-			$(elems[1]).css('border-color', 'rgb(187, 19, 19)');
+			$(elems[1]).addClass('error-border');
 		}
 		else {
 			$.ajax({
@@ -122,8 +122,8 @@ $(document).ready(function() {
 						$('.loginBox').fadeOut();
 					}
 					else {
-						$(elems[0]).css('border-color', 'rgb(187, 19, 19)');
-						$(elems[1]).css('border-color', 'rgb(187, 19, 19)');
+						$(elems[0]).addClass('error-border');
+						$(elems[1]).addClass('error-border');
 					}
 				}
 			});

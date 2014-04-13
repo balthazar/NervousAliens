@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../../../../nfs/zfs-student-5/users/2013/bgronon/.gems/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.gem/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -100,7 +100,6 @@ hr.custom {
 
 /* line 50, ../scss/style.scss */
 i.custom {
-  background-color: #1e6bce;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -157,10 +156,10 @@ input[type="text"], input[type="password"] {
   font-family: "Coalition";
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  background-color: rgba(28, 112, 223, 0.56);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 8px 15px;
   color: white;
+  background-color: rgba(22, 22, 22, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* line 12, ../scss/style.scss */
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
@@ -180,15 +179,16 @@ input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-place
 }
 /* line 97, ../scss/style.scss */
 input[type="text"]:focus, input[type="password"]:focus {
-  border-color: rgba(99, 157, 233, 0.93);
+  border-color: rgba(44, 114, 206, 0.5);
 }
 
 /* line 102, ../scss/style.scss */
 a.custom {
   cursor: pointer;
-  background-color: #1e6bce;
   text-decoration: none;
   color: white;
+  background-color: rgba(22, 22, 22, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
@@ -204,38 +204,44 @@ a.custom {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-/* line 111, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 a.custom:hover {
-  background-color: #287CE9;
+  background-color: rgba(40, 124, 233, 0.26);
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 116, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
+.error-border {
+  border-color: rgba(201, 13, 13, 0.5) !important;
+}
+
+/* line 122, ../scss/style.scss */
 .intro, .game-container, .registerBox, .loginBox {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .intro {
   padding: 50px;
   font-family: "Coalition";
 }
-/* line 124, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .intro .launch {
   height: 200px;
   padding: 20px 50px 10px 50px;
   font-size: 40px;
 }
-/* line 129, ../scss/style.scss */
+/* line 135, ../scss/style.scss */
 .intro > p {
-  margin-top: 30px;
+  margin-top: 50px;
 }
-/* line 131, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .intro > p > a {
   padding: 10px 15px 7px 20px;
 }
 
-/* line 137, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -244,7 +250,7 @@ a.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 141, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -253,7 +259,7 @@ a.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 145, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -262,7 +268,7 @@ a.custom:hover {
   transform: rotate(270deg);
 }
 
-/* line 149, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -271,7 +277,7 @@ a.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 153, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .ship {
   height: 10px;
   width: 10px;
@@ -282,12 +288,12 @@ a.custom:hover {
   -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
-/* line 162, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .ship img {
   max-width: 200px;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 .game-container {
   display: none;
   width: 1500px;
@@ -300,11 +306,11 @@ a.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 176, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 179, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
   font-family: "Coalition";
@@ -315,11 +321,11 @@ a.custom:hover {
   position: absolute;
   color: white;
 }
-/* line 188, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .game-container > .controllers i span {
   font-family: "Coalition";
 }
-/* line 191, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .game-container > .controllers > p {
   margin-top: 20px;
 }
