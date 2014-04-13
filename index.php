@@ -41,7 +41,21 @@
 			</div>
 			<p class="messageInfo"></p>
 			<div class="game-container">
-				<div class="grid"></div>
+				<div class="grid">
+<table>
+<?php
+
+	for ($i = 0; i < 1000; i++) {
+		echo "<tr>\n";
+		for (var $y = 0; y < 1500; y++) {
+			echo "<td></td>\n";
+		}
+		echo "</tr>\n";
+	}
+
+?>
+</table>
+				</div>
 				<hr class="custom">
 				<div class="controllers">
 					<i class="icon-undo custom"></i>
