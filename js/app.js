@@ -174,17 +174,17 @@ $(document).ready(function() {
 			var or = orientation[ships[id].orientation];
 			if (or == 'north') {
 				niou.animate({
-					top: '-=200%'
+					top: '-=150%'
 				}, {
 					duration: 5000,
 					step: function(now, fx){
-						checkAround(ships[id].x, now * 10, niou, id);
+						checkAround(ships[id].x, now * 50, niou, id);
 					}
 				});
 			}
 			else if (or == 'south') {
 				niou.animate({
-					top: '+=200%'
+					top: '+=150%'
 				}, {
 					duration: 5000,
 					step: function(now, fx){
@@ -194,7 +194,7 @@ $(document).ready(function() {
 			}
 			else if (or == 'west') {
 				niou.animate({
-					left: '-=200%'
+					left: '-=150%'
 				}, {
 					duration: 5000,
 					step: function(now, fx){
@@ -204,7 +204,7 @@ $(document).ready(function() {
 			}
 			else if (or == 'east') {
 				niou.animate({
-					left: '+=200%'
+					left: '+=150%'
 				}, {
 					duration: 5000,
 					step: function(now, fx){

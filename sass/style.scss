@@ -1,7 +1,7 @@
 @function multiplestars($num) {
-	$val: '#{random(2000)}px #{random(2000)}px #FFFFFF';
+	$val: '#{random(2560)}px #{random(2560)}px #FFFFFF';
 	@for $i from 2 through $num {
-		$val: '#{$val} , #{random(2000)}px #{random(2000)}px #FFFFFF';
+		$val: '#{$val} , #{random(2560)}px #{random(2560)}px #FFFFFF';
 	}
 	@return unquote($val);
 }
