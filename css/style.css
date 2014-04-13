@@ -252,6 +252,12 @@ a.custom:hover {
 }
 
 /* line 150, ../scss/style.scss */
+.shoot {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 155, ../scss/style.scss */
 .north {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -260,7 +266,7 @@ a.custom:hover {
   transform: rotate(0deg);
 }
 
-/* line 154, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .south {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -269,7 +275,7 @@ a.custom:hover {
   transform: rotate(180deg);
 }
 
-/* line 158, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 .west {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -278,7 +284,7 @@ a.custom:hover {
   transform: rotate(270deg);
 }
 
-/* line 162, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .east {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -287,13 +293,13 @@ a.custom:hover {
   transform: rotate(90deg);
 }
 
-/* line 166, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .ship {
   width: 10px;
   height: 1px;
   cursor: pointer;
 }
-/* line 170, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .ship img {
   max-width: 200px;
   -webkit-transition: all 250ms ease-in;
@@ -303,7 +309,7 @@ a.custom:hover {
   transition: all 250ms ease-in;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .game-container {
   display: none;
   position: relative;
@@ -317,16 +323,16 @@ a.custom:hover {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
-/* line 190, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .game-container > .grid {
   height: 1000px;
 }
-/* line 192, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .game-container > .grid td {
   width: 10px;
   height: 10px;
 }
-/* line 197, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .game-container > .controllers {
   text-align: left;
   font-family: "Main";
@@ -337,29 +343,29 @@ a.custom:hover {
   position: absolute;
   color: white;
 }
-/* line 206, ../scss/style.scss */
+/* line 211, ../scss/style.scss */
 .game-container > .controllers .flex {
   margin-top: 10px;
 }
-/* line 208, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 .game-container > .controllers .flex p {
   margin-right: 80px;
 }
-/* line 211, ../scss/style.scss */
+/* line 216, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child {
   margin-left: auto;
 }
-/* line 213, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .game-container > .controllers .flex p:last-child .user {
   margin-right: 10px;
   color: rgba(204, 21, 21, 0.86);
 }
-/* line 218, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .game-container > .controllers .flex i span {
   font-family: "Main";
   font-size: 18px;
 }
-/* line 223, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .game-container > .controllers > p {
   margin-top: 20px;
 }

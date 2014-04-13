@@ -147,6 +147,11 @@ a.custom {
 	color: red;
 }
 
+.shoot {
+	width: 100px;
+	height: 100px;
+}
+
 .north {
 	@include rotate(0deg);
 }

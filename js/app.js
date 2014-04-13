@@ -126,9 +126,30 @@ $(document).ready(function() {
 	function shoot(id) {
 		var shoot = '<div class="shoot"><img src="sprites/fire.gif" width="100px"></div>';
 		$('.grid').append(shoot);
-		var padding = $('.grid').offset();
 		var niou = $('.grid div:last');
-		niou.offset({ top: padding.top + ships[id].y, left: padding.left + ships[id].x });
+		niou.children().addClass(orientation[ships[id].orientation]);
+		niou.offset({ top: ships[id].y, left: ships[id].x });
+		var or = orientation[ships[id].orientation];
+		if (or == 'north') {
+			niou.animate({
+				top: '-=200%'
+			}, 5000);
+		}
+		else if (or == 'south') {
+			niou.animate({
+				top: '+=200%'
+			}, 5000);
+		}
+		else if (or == 'west') {
+			niou.animate({
+				left: '-=200%'
+			}, 5000);
+		}
+		else if (or == 'east') {
+			niou.animate({
+				left: '+=200%'
+			}, 5000);
+		}
 	}
 
 	$('.icon-lock2').click(function() {
@@ -188,7 +209,7 @@ $(document).ready(function() {
 		}
 		else if (e.which === 96) {
 			//shoot p1
-			shoot(selected1);
+			shoot(selected2);
 		}
 		else if (e.which === 97) {
 			//ship1 p1
@@ -217,7 +238,7 @@ $(document).ready(function() {
 		}
 		else if (e.which === 32) {
 			//shoot p2
-			shoot(selected2);
+			shoot(selected1);
 		}
 		else if (e.which === 49) {
 			//ship1 p2
