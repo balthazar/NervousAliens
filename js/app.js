@@ -4,6 +4,8 @@ $(document).ready(function() {
 	var orientation = ['north', 'east', 'south', 'west'];
 	var selected1 = 0;
 	var selected2 = 5;
+	var cptship1 = 5;
+	var cptship2 = 5;
 
 	function addShip(name, x, y, o, img, type, id) {
 		var width = (type === 'chasseur') ? 80 : 200;
@@ -55,10 +57,10 @@ $(document).ready(function() {
 		$('.controllers .info').fadeIn();
 		$('.controllers .info:first i:first-child').html('<span> '+ships[selected1].life+'</span>').removeClass('redcolor');
 		$('.controllers .info:last i:first-child').html('<span> '+ships[selected2].life+'</span>').removeClass('redcolor');
-		if (ships[selected1].life == 0) {
+		if (ships[selected1].life <= 0) {
 			$('.controllers .info:first i:first-child').addClass('redcolor');
 		}
-		if (ships[selected2].life == 0) {
+		if (ships[selected2].life <= 0) {
 			$('.controllers .info:last i:first-child').addClass('redcolor');
 		}
 		if (ships[selected1].type === 'base')
@@ -123,32 +125,88 @@ $(document).ready(function() {
 		}
 	}
 
+	function checkWin() {
+		if (cptship1 == 0) {
+			
+		}
+		else if (cptship2 == 0) {
+			
+		}
+	}
+
+	function checkDead(id) {
+		if (ships[id].life <= 0) {
+			$('#ship'+id).fadeOut();
+			if (id < 5)
+				cptship1--;
+			else if (id >= 5)
+				cptship2--;
+			checkWin();
+		}
+	}
+
+	function checkAround(x, y, elem, id) {
+		for (var i = 0; i < ships.length; i++) {
+			if (i != id && ships[i].life > 0
+				&& x - 50 < ships[i].x && x + 50 > ships[i].x
+				&& y - 50 < ships[i].y && y + 50 > ships[i].y) {
+				ships[i].life--;
+				resetShipInfos();
+				checkDead(i);
+				console.log('hit');
+				return;
+			}
+		}
+	}
+
 	function shoot(id) {
-		var shoot = '<div class="shoot"><img src="sprites/fire.gif" width="100px"></div>';
-		$('.grid').append(shoot);
-		var niou = $('.grid div:last');
-		niou.children().addClass(orientation[ships[id].orientation]);
-		niou.offset({ top: ships[id].y, left: ships[id].x });
-		var or = orientation[ships[id].orientation];
-		if (or == 'north') {
-			niou.animate({
-				top: '-=200%'
-			}, 5000);
-		}
-		else if (or == 'south') {
-			niou.animate({
-				top: '+=200%'
-			}, 5000);
-		}
-		else if (or == 'west') {
-			niou.animate({
-				left: '-=200%'
-			}, 5000);
-		}
-		else if (or == 'east') {
-			niou.animate({
-				left: '+=200%'
-			}, 5000);
+		if (ships[id].life > 0) {
+			var shoot = '<div class="shoot"><img src="sprites/fire.gif" width="100px"></div>';
+			$('.grid').append(shoot);
+			var niou = $('.grid div:last');
+			niou.children().addClass(orientation[ships[id].orientation]);
+			niou.offset({ top: ships[id].y, left: ships[id].x });
+			var or = orientation[ships[id].orientation];
+			if (or == 'north') {
+				niou.animate({
+					top: '-=200%'
+				}, {
+					duration: 5000,
+					step: function(now, fx){
+						checkAround(ships[id].x, now * 10, niou, id);
+					}
+				});
+			}
+			else if (or == 'south') {
+				niou.animate({
+					top: '+=200%'
+				}, {
+					duration: 5000,
+					step: function(now, fx){
+						checkAround(ships[id].x, now * 10, niou, id);
+					}
+				});
+			}
+			else if (or == 'west') {
+				niou.animate({
+					left: '-=200%'
+				}, {
+					duration: 5000,
+					step: function(now, fx){
+						checkAround(now * 10, ships[id].y, niou, id);
+					}
+				});
+			}
+			else if (or == 'east') {
+				niou.animate({
+					left: '+=200%'
+				}, {
+					duration: 5000,
+					step: function(now, fx){
+						checkAround(now * 10, ships[id].y, niou, id);
+					}
+				});
+			}
 		}
 	}
 
