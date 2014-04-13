@@ -60,7 +60,7 @@ i.custom {
 	padding: 4px 10px;
 	min-height: 30px;
 	&:hover {
-		background-color: #287CE9;
+		color: #287CE9;
 	}
 }
 
@@ -73,6 +73,10 @@ i.custom {
 	.registerBox, .loginBox {
 		display: none;
 	}
+}
+
+.flex {
+	display: flex;
 }
 
 .hide {
@@ -172,6 +176,7 @@ a.custom {
 
 .game-container {
 	display:none;
+	position: relative;
 	width: 1500px;
 	height: 1100px;
 	margin: 0 auto;
@@ -195,6 +200,23 @@ a.custom {
 		bottom: 0;
 		position: absolute;
 		color: white;
+		.flex {
+			margin-top: 10px;
+			p {
+				margin-right: 80px;
+			}
+			p:last-child{
+				margin-left: auto;
+				.user {
+					margin-right: 10px;
+					color: rgba(204, 21, 21, 0.86);
+				}
+			}
+			i span {
+				font-family: "Main";
+				font-size: 18px;
+			}
+		}
 		> p {
 			margin-top: 20px;
 		}

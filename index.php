@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/compiled.css">
 
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/app.js"></script>
 	</head>
 	<body>
@@ -61,7 +62,21 @@
 					<i class="icon-undo custom"></i>
 					<i class="icon-redo custom"></i>
 					<i class="icon-disk custom"></i>
-					<p>Ship selected : <span class="selected"></span></p>
+					<div class="flex">
+						<p>Player 1 : <span class="selected">NONE</span>
+							<span class="info hide">
+								<i class="icon-heart2"></i>
+								<i class="icon-lightning"></i>
+							</span>
+						</p>
+						<p>Player 2 : <span class="selected">NONE</span>
+							<span class="info hide">
+								<i class="icon-heart2"></i>
+								<i class="icon-lightning"></i>
+							</span>
+						</p>
+						<p>Logged as <span class="user"></span><i class="icon-lock2 custom"></i></p>
+					</div>
 				</div>
 			</div>
 		</div>

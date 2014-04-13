@@ -5,9 +5,6 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true
 			},
-			html: {
-				files: ['index.html']
-			},
 			css: {
 				files: ['scss/*.scss'],
 				tasks: ['compass']
@@ -20,7 +17,7 @@ module.exports = function(grunt) {
 				files: ['js/*.js']
 			},
 			php: {
-				files: ['php/*.php']
+				files: ['index.php', 'php/*.php']
 			}
 		},
 		compass: {
